@@ -1,0 +1,106 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	/* Page reset */
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	color:#444444;
+	font-size:13px;
+	background: #f2f2f2;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Gallery styles */
+
+#gallery{
+	/* 设置整个轮播的阴影 */
+	box-shadow:0 0 3px #AAAAAA;
+	
+	/* 搞一个左下右下的圆角 */
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	
+	border:1px solid white;
+	
+	/* background:url('./images/panel.jpg') repeat-x bottom center #ffffff; */
+	
+	/* The width of the gallery */
+	width:920px;
+	overflow:hidden;
+}
+
+#slides{
+	height:400px;
+	/* jQuery会将宽度更改为所有slide宽度之和。  */
+	width:920px;
+  overflow:hidden;
+  /* 超出的部分修建掉,使底下的小bg可以向上一点 */
+}
+
+.slide{
+	float:left;
+}
+
+#menu{
+	/* This is the container for the thumbnails */
+  height:45px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ebebeb 1%,#f5f5f5 51%,#ebebeb 100%);
+  border-top: 1px solid rgb(224, 224, 224);
+  /* border-bottom: 1px solid rgb(224, 224, 224); */
+  /* box-shadow: 10px 10px 10px 10px red; */
+}
+/* 
+父元素text-align:center;
+子元素display:inline-block;
+即可实现居中
+*/
+ul{
+  display: inline-block;
+}
+
+li{
+	width:60px;
+	height:45px;
+  float: left;  
+	list-style:none;
+}
+
+li.inact:hover{
+	/* 非活动状态的li在鼠标浮动在其上时也加背景 */
+	background:url('./images/active_bg.png') repeat;
+}
+
+li.act,
+li.act:hover{
+	/* act状态的和hover在act状态上的li 添加背景 */
+	background:url('./images/active_bg.png') no-repeat;
+}
+
+li.act a{
+	cursor:default;
+/* 更改鼠标样式 */
+}
+
+.fbar{
+	/* 给最左侧的menuItem添加一个竖条 */
+	width:4px;
+	background:url('./images/divider.png') no-repeat right;
+}
+
+li a{
+	display:block;
+	background:url('./images/divider.png') no-repeat right;
+	height:35px;
+	padding-top:10px;
+}
+
+#main{
+	/* The main container */
+	margin:15px auto;
+	text-align:center;
+	width:920px;
+	position:relative;
+}
