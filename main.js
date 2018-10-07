@@ -23,7 +23,6 @@ $(document).ready(function () {
 					$(this).parent().addClass('act');
 					//给this的爸爸们添加act(所有的四个 ,后添加的act会起作用)
 					pos = $(this).parent().prevAll('.menuItem').length;
-					console.log(pos)
 					//.prevAll()  获得当前匹配元素集合中每个元素的前面的同胞元素
 					$('#slides').stop().animate({
 						//.stop() 停止当前进行的动画
